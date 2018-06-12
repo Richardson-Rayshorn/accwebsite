@@ -1,0 +1,16 @@
+#root{
+  position: relative;
+  height: 600px;
+  max-height: auto;
+}
+
+#loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: lightgray;
+  color: gray;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}

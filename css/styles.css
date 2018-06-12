@@ -1,0 +1,152 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#root{
+  position: relative;
+  max-height: auto;
+  height: auto !important;
+  transition: 2px ease;
+}
+/***** index.html header section ********/
+#header-container{
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+}
+
+#top-container{
+  border-bottom: .5px solid lightgray;
+}
+
+header{
+  width: 90%;
+  margin: 4px auto;
+  display: flex;
+  position: relative;
+  left: -62px;
+}
+
+header img{
+  width: 400px;
+  height: 79px;
+}
+
+nav{
+  margin: auto;
+}
+
+header ul{
+  display: flex;
+  margin: 0;
+}
+
+header ul li{
+  padding: 15px;
+  list-style: none;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+}
+
+/***** home.html page *******/
+#coverImage{
+  background: linear-gradient(rgba(211,211,211,0.2), rgba(211,211,211,0.4)),
+  url(../images/coverImage.jpg) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed;
+  width: 100%;
+  height: 680px;
+  position: relative;
+  overflow: hidden;
+}
+
+#coverImage p{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 40%;
+  font-size: 40px;
+}
+
+#coverImage p span{
+  font-size: 19px;
+  padding: 10px;
+  background-color: white;
+}
+
+/****** sideNav *******/
+
+#sideNav{
+  position: fixed;
+  width: 90px;
+  height: auto;
+  top: 50%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#sideNav div{
+  width: 15px;
+  height: 15px;
+  border: 10px;
+  background: black;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: .5s ease-in;
+  cursor: pointer;
+  box-shadow: 2px 3px 13px;
+}
+
+#sideNav div span{
+  position: absolute;
+  right: 20px;
+}
+
+#sideNav div:hover{
+  overflow: inherit;
+  transition: .5s ease-in;
+}
+
+/********** features Page ************/
+.feature{
+  width: 80%;
+  margin: 0 auto;
+}
+
+#feature-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#feature-list article{
+  width: 33%;
+  margin: 0 auto;
+}
+
+#feature-list article h3{
+  color: #1c9dce;
+}
+
+@media screen and (max-width:2560px) {
+  #coverImage{
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width:1441px) {
+  #coverImage{
+    height: 650px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  #coverImage{
+    height: 650px;
+  }
+}

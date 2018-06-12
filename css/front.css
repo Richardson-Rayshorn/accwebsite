@@ -1,0 +1,5 @@
+header{
+  position: absolute !important;
+  z-index: 99;
+  left: inherit !important;
+}
